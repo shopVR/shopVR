@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/RoyaltyFreeMusic.mp3-f99dcdf148320fef1f3e92452e326915.mp3str"
+
+[deps]
+
+source_file="res://RoyaltyFreeMusic.mp3"
+dest_files=[ "res://.import/RoyaltyFreeMusic.mp3-f99dcdf148320fef1f3e92452e326915.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
