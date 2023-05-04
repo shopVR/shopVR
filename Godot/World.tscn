@@ -24,9 +24,9 @@
 [sub_resource type="BoxShape" id=4]
 
 [sub_resource type="Environment" id=5]
-background_energy = 8.5
+background_energy = 9.27
 ambient_light_color = Color( 0.909804, 0.933333, 0.929412, 1 )
-ambient_light_energy = 2.83
+ambient_light_energy = 8.47
 fog_enabled = true
 auto_exposure_enabled = true
 auto_exposure_scale = 0.15
@@ -41,8 +41,10 @@ dof_blur_far_distance = 0.01
 dof_blur_near_enabled = true
 glow_enabled = true
 glow_levels/1 = true
+glow_levels/2 = true
+glow_levels/4 = true
 glow_intensity = 0.95
-glow_strength = 1.7
+glow_strength = 1.91
 glow_bicubic_upscale = true
 glow_high_quality = true
 adjustment_enabled = true
@@ -118,6 +120,12 @@ shape = SubResource( 4 )
 [node name="MensSection" parent="Store" instance=ExtResource( 12 )]
 transform = Transform( -1.47307e-08, 0, -0.209, 0, 0.217, 0, 0.337, 0, -9.13568e-09, 4.91217, 0.28281, 1.80719 )
 
+[node name="WomensSection" parent="Store" instance=ExtResource( 13 )]
+transform = Transform( -1.45705e-08, 0, -0.275333, 0, 0.331333, 0, 0.333333, 0, -1.20352e-08, 5.3055, 0.28376, 5.20667 )
+
+[node name="WomensShoeIsland" parent="Store" instance=ExtResource( 14 )]
+transform = Transform( -1.57652e-08, 0, 0.216333, 0, 0.232, 0, -0.360667, 0, -9.45623e-09, 4.4739, 0.306698, 1.96998 )
+
 [node name="BackingShelf" parent="Store" instance=ExtResource( 10 )]
 transform = Transform( -1.65666e-08, 0, -0.224, 0, 0.291, 0, 0.379, 0, -9.79135e-09, 0.5273, 0.092, 0.063 )
 
@@ -158,9 +166,3 @@ transform = Transform( -0.355026, 0.834682, 0.421025, 0.934856, 0.316983, 0.1598
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.642, 10.5345, -10.6288 )
 light_energy = 15.825
 omni_range = 39.244
-
-[node name="WomensSection" parent="." instance=ExtResource( 13 )]
-transform = Transform( -4.37114e-08, 0, -0.826, 0, 0.994, 0, 1, 0, -3.61056e-08, 15.9165, 1.80118, 15.62 )
-
-[node name="WomensShoeIsland" parent="." instance=ExtResource( 14 )]
-transform = Transform( -4.72957e-08, 0, 0.649, 0, 0.696, 0, -1.082, 0, -2.83687e-08, 13.4217, 1.86999, 5.90995 )
