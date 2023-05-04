@@ -111,11 +111,43 @@ shape = SubResource( 4 )
 transform = Transform( -9.61651e-08, 0, 0.2, 0, 3, 0, -2.2, 0, -8.74228e-09, 8.03113, 2.38922, -3.38865 )
 shape = SubResource( 4 )
 
+[node name="OmniLight" type="OmniLight" parent="Store"]
+transform = Transform( 0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 3.571, 3.828, 0 )
+include_in_bound = false
+allow_merging = false
+light_energy = 1.755
+light_indirect_energy = 0.0
+light_specular = 5.49
+shadow_color = Color( 0.960784, 0.956863, 0.65098, 1 )
+shadow_bias = 0.189
+omni_range = 15.706
+
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
 
+[node name="SpotLight" type="SpotLight" parent="Lampost"]
+transform = Transform( 2, 0, 0, 0, -1.34039e-07, 2, 0, -2, -1.34039e-07, 1.114, 32.493, 0.858002 )
+light_color = Color( 0.933333, 0.937255, 0.643137, 1 )
+light_energy = 8.348
+light_indirect_energy = 5.558
+light_specular = 0.94
+shadow_enabled = true
+shadow_color = Color( 0.87451, 0.92549, 0.509804, 1 )
+shadow_bias = 0.884
+shadow_contact = 6.33
+spot_range = 98.054
+
 [node name="Lampost2" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, -21.986 )
+
+[node name="SpotLight" type="SpotLight" parent="Lampost2"]
+transform = Transform( 2, 0, 0, 0, -8.67873e-08, 2, 0, -2, -8.67873e-08, 2.796, 30.876, 0.485 )
+light_color = Color( 0.933333, 0.937255, 0.643137, 1 )
+light_energy = 8.348
+light_specular = 0.94
+shadow_enabled = true
+shadow_color = Color( 0.87451, 0.92549, 0.509804, 1 )
+spot_range = 98.054
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 5 )
