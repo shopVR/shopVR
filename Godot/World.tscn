@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cashier2.tscn" type="PackedScene" id=2]
@@ -9,8 +9,9 @@
 [ext_resource path="res://RoyaltyFreeMusic.mp3" type="AudioStream" id=7]
 [ext_resource path="res://Store.tscn" type="PackedScene" id=8]
 [ext_resource path="res://SecurityCam.tscn" type="PackedScene" id=9]
-[ext_resource path="res://models/Shelves/BackingShelf.glb" type="PackedScene" id=10]
+[ext_resource path="res://models/Shelves/Backing Shelf/BackingShelf.glb" type="PackedScene" id=10]
 [ext_resource path="res://Lampost.tscn" type="PackedScene" id=11]
+[ext_resource path="res://models/Shelves/Mens Section/MensSection.glb" type="PackedScene" id=12]
 
 [sub_resource type="HeightMapShape" id=2]
 
@@ -67,16 +68,16 @@ transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 18.7439, -0.1796, 0 )
 shape = SubResource( 2 )
 
 [node name="Cashier2" parent="Store" instance=ExtResource( 2 )]
-transform = Transform( -0.696811, 0, 0.0667392, 0, 0.7, 0, -0.0667392, 0, -0.696811, 2.32352, 1.00368, 2.03874 )
+transform = Transform( -0.696811, 0, 0.0667392, 0, 0.7, 0, -0.0667392, 0, -0.696811, 1.99963, 1.00368, 1.65468 )
 
 [node name="Bin" parent="Store" instance=ExtResource( 3 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.62415, 0.422104, 0.603124 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 1.30026, 0.422104, 0.219071 )
 
 [node name="Cashier" parent="Store" instance=ExtResource( 1 )]
-transform = Transform( -0.699994, 0, -0.00299316, 0, 0.7, 0, 0.00299316, 0, -0.699994, 2.42792, 1.01153, 3.57781 )
+transform = Transform( -0.699994, 0, -0.00299316, 0, 0.7, 0, 0.00299316, 0, -0.699994, 2.10403, 1.01153, 3.19375 )
 
 [node name="CashierDesk" parent="Store" instance=ExtResource( 4 )]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.22655, 0.589088, 2.43977 )
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.32053, 0.589088, 2.05572 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Store"]
 transform = Transform( 22, 0, 0, 0, 1, 0, 0, 0, 20, 20.7509, -1.09203, 0 )
@@ -112,19 +113,11 @@ shape = SubResource( 4 )
 transform = Transform( -9.61651e-08, 0, 0.2, 0, 3, 0, -2.2, 0, -8.74228e-09, 8.0793, 2.38922, -3.3105 )
 shape = SubResource( 4 )
 
-[node name="OmniLight" type="OmniLight" parent="Store"]
-transform = Transform( 0.333333, 0, 0, 0, 0.333333, 0, 0, 0, 0.333333, 1.85526, 3.35938, -0.0490748 )
-include_in_bound = false
-allow_merging = false
-light_energy = 1.755
-light_indirect_energy = 0.0
-light_specular = 5.49
-shadow_color = Color( 0.960784, 0.956863, 0.65098, 1 )
-shadow_bias = 0.189
-omni_range = 1417.03
+[node name="MensSection" parent="Store" instance=ExtResource( 12 )]
+transform = Transform( -1.47307e-08, 0, -0.209, 0, 0.217, 0, 0.337, 0, -9.13568e-09, 4.91217, 0.28281, 1.80719 )
 
 [node name="BackingShelf" parent="Store" instance=ExtResource( 10 )]
-transform = Transform( -1.65666e-08, 0, -0.224, 0, 0.291, 0, 0.379, 0, -9.79135e-09, 0.552, 0.092, 0.063 )
+transform = Transform( -1.65666e-08, 0, -0.224, 0, 0.291, 0, 0.379, 0, -9.79135e-09, 0.5273, 0.092, 0.063 )
 
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
@@ -158,3 +151,8 @@ environment = SubResource( 5 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( -0.355026, 0.834682, 0.421025, 0.934856, 0.316983, 0.159891, 0, 0.450363, -0.892845, -36.4306, 108.324, 17.1784 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14.642, 10.5345, -10.6288 )
+light_energy = 15.825
+omni_range = 39.244
