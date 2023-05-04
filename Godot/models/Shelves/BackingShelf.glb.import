@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/ShelvesScene.gltf-480be29d0b586a800033083e1588f4e2.scn"
+path="res://.import/BackingShelf.glb-5fff50ec5c94ece005b6f28a75836800.scn"
 
 [deps]
 
-source_file="res://models/Shelves/ShelvesScene.gltf"
-dest_files=[ "res://.import/ShelvesScene.gltf-480be29d0b586a800033083e1588f4e2.scn" ]
+source_file="res://models/Shelves/BackingShelf.glb"
+dest_files=[ "res://.import/BackingShelf.glb-5fff50ec5c94ece005b6f28a75836800.scn" ]
 
 [params]
 
