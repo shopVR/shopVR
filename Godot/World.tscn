@@ -1,10 +1,11 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cashier2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Bin.tscn" type="PackedScene" id=3]
 [ext_resource path="res://CashierDesk.tscn" type="PackedScene" id=4]
 [ext_resource path="res://VRPlayerLocomotion.tscn" type="PackedScene" id=5]
+[ext_resource path="res://TryOnShoes.tscn" type="PackedScene" id=6]
 [ext_resource path="res://RoyaltyFreeMusic.mp3" type="AudioStream" id=7]
 [ext_resource path="res://Store.tscn" type="PackedScene" id=8]
 [ext_resource path="res://SecurityCam.tscn" type="PackedScene" id=9]
@@ -25,6 +26,8 @@
 [sub_resource type="BoxShape" id=6]
 
 [sub_resource type="BoxShape" id=7]
+
+[sub_resource type="BoxShape" id=8]
 
 [node name="World" type="Spatial"]
 
@@ -115,6 +118,16 @@ shape = SubResource( 7 )
 transform = Transform( 2.925, 0, 0, 0, 2.201, 0, 0, 0, 0.633, 4.712, -0.018, 5.109 )
 shape = SubResource( 7 )
 
+[node name="TryOnShoes" parent="Store" instance=ExtResource( 6 )]
+transform = Transform( -0.25, 0, -2.18557e-08, 0, 0.25, 0, 2.18557e-08, 0, -0.25, 7.72517, 0.231213, -3.69426 )
+
+[node name="TryOn" type="Area" parent="Store/TryOnShoes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.49618, 0 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Store/TryOnShoes/TryOn"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.94088, 0 )
+shape = SubResource( 8 )
+
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
 
@@ -144,3 +157,5 @@ spot_range = 98.054
 
 [node name="VRPlayerLocomotion" parent="." instance=ExtResource( 5 )]
 transform = Transform( 0.0229665, 0, 0.999736, 0, 1, 0, -0.999736, 0, 0.0229665, 67.5774, 4.28982, 0 )
+
+[connection signal="area_entered" from="Store/TryOnShoes/TryOn" to="VRPlayerLocomotion" method="_on_TryOn_area_entered"]

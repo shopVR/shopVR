@@ -51,3 +51,10 @@ func _on_Area_area_entered(area):
 
 func _on_Area2_area_entered(area):
 	get_tree().quit()
+
+
+func _on_TryOn_area_entered(area):
+	if (speed == 0.1):
+		speed = 0.2
+	else:
+		speed == 0.1
