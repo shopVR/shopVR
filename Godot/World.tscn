@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cashier2.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://SlidersBlack.tscn" type="PackedScene" id=22]
 [ext_resource path="res://basket.tscn" type="PackedScene" id=23]
 [ext_resource path="res://models/ShoeBox/ShoeBox.gltf" type="PackedScene" id=24]
+[ext_resource path="res://models/ShoeBoxStack/ShoeBoxStack.gltf" type="PackedScene" id=25]
 
 [sub_resource type="HeightMapShape" id=2]
 
@@ -224,6 +225,9 @@ transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0
 
 [node name="ShoeBox10" parent="Store" instance=ExtResource( 24 )]
 transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 2.11864, 0.678414, -4.38603 )
+
+[node name="ShoeBoxStack" parent="Store" instance=ExtResource( 25 )]
+transform = Transform( -0.0200992, 0, -0.195919, 0, 0.2, 0, 0.0979593, 0, -0.0401985, 1.0835, 0.491108, -5.60019 )
 
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
