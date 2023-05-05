@@ -47,3 +47,7 @@ func _physics_process(delta):
 
 func _on_Area_area_entered(area):
 	get_tree().change_scene("World.tscn")
+
+
+func _on_Area2_area_entered(area):
+	get_tree().quit()

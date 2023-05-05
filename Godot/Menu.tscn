@@ -13,8 +13,17 @@
 transform = Transform( 7, 3.48708e-09, 1.04612e-08, -2.44096e-08, 1, 4.57274e-16, -2.44096e-08, -1.64583e-16, 3, 2.99579, -0.639484, -1.35322 )
 shape = SubResource( 1 )
 
+[node name="Area2" type="Area" parent="Quit" index="0"]
+transform = Transform( -1, -4.37114e-08, -4.37114e-08, 4.37114e-08, -1, 0, -4.37114e-08, 0, 1, 4.35545, -1.23055, -0.0872986 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Quit/Area2" index="0"]
+transform = Transform( 7, 3.48708e-09, 1.04612e-08, -2.44096e-08, 1, 4.57274e-16, -2.44096e-08, -1.64583e-16, 3, 2.99579, -0.639484, -1.35322 )
+shape = SubResource( 1 )
+
 [node name="VRPlayerLocomotion" parent="." index="12" instance=ExtResource( 2 )]
 transform = Transform( 0.109301, 0, -0.994009, 0, 1, 0, 0.994009, 0, 0.109301, -11.2777, 1.97162, 0 )
 
 [connection signal="area_entered" from="Play Game/Area" to="VRPlayerLocomotion" method="_on_Area_area_entered"]
 [connection signal="input_event" from="Play Game/Area" to="VRPlayerLocomotion" method="_on_Area_input_event"]
+[connection signal="area_entered" from="Quit/Area2" to="VRPlayerLocomotion" method="_on_Area2_area_entered"]
+[connection signal="input_event" from="Quit/Area2" to="VRPlayerLocomotion" method="_on_Area_input_event"]
