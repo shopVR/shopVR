@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cashier2.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Shoe_Style_1.tscn" type="PackedScene" id=21]
 [ext_resource path="res://SlidersBlack.tscn" type="PackedScene" id=22]
 [ext_resource path="res://basket.tscn" type="PackedScene" id=23]
+[ext_resource path="res://models/ShoeBox/ShoeBox.gltf" type="PackedScene" id=24]
 
 [sub_resource type="HeightMapShape" id=2]
 
@@ -193,6 +194,36 @@ transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 4.67411, 2.16196, -5.760
 
 [node name="basket" parent="Store" instance=ExtResource( 23 )]
 transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 1.812, 0.956896, 0.919197 )
+
+[node name="ShoeBox" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.00570351, 0, 0.0496736, 0, 0.05, 0, -0.0496736, 0, -0.00570351, 2.3198, 0.956418, 3.60087 )
+
+[node name="ShoeBox2" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 6.89069, 0.793487, 5.13423 )
+
+[node name="ShoeBox3" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 6.60016, 0.793487, 5.14189 )
+
+[node name="ShoeBox4" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 6.91854, 0.678414, -4.51255 )
+
+[node name="ShoeBox5" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 6.55034, 0.678414, -4.50285 )
+
+[node name="ShoeBox6" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 6.13671, 0.678414, -4.49194 )
+
+[node name="ShoeBox7" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 4.27369, 0.678414, -4.44283 )
+
+[node name="ShoeBox8" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 3.83085, 0.678414, -4.43116 )
+
+[node name="ShoeBox9" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 3.47087, 0.678414, -4.42167 )
+
+[node name="ShoeBox10" parent="Store" instance=ExtResource( 24 )]
+transform = Transform( -0.0799722, 0, -0.00210811, 0, 0.08, 0, 0.00210811, 0, -0.0799722, 2.11864, 0.678414, -4.38603 )
 
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
