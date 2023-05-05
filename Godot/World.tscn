@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Cashier.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Cashier2.tscn" type="PackedScene" id=2]
@@ -19,6 +19,9 @@
 [ext_resource path="res://BootsBlack.tscn" type="PackedScene" id=17]
 [ext_resource path="res://SlidersPink.tscn" type="PackedScene" id=18]
 [ext_resource path="res://SlidersRed.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Shoe_Style_2.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Shoe_Style_1.tscn" type="PackedScene" id=21]
+[ext_resource path="res://SlidersBlack.tscn" type="PackedScene" id=22]
 
 [sub_resource type="HeightMapShape" id=2]
 
@@ -46,10 +49,10 @@ autoplay = true
 transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0.949899, 0 )
 
 [node name="BootsBeige" parent="Store" instance=ExtResource( 16 )]
-transform = Transform( 0.195268, 0.043247, 0, -0.043247, 0.195268, 0, 0, 0, 0.2, 5.89144, 2.30414, 5.87488 )
+transform = Transform( 0.195268, 0.043247, 0, -0.043247, 0.195268, 0, 0, 0, 0.11, 5.88696, 2.28393, 5.76324 )
 
 [node name="BootsBeige2" parent="Store" instance=ExtResource( 16 )]
-transform = Transform( 0.195268, 0.043247, 0, -0.043247, 0.195268, 0, 0, 0, 0.2, 6.99208, 2.28586, 5.87488 )
+transform = Transform( 0.195268, 0.043247, 0, -0.043247, 0.195268, 0, 0, 0, 0.1, 6.99208, 2.28586, 5.87488 )
 
 [node name="CollisionPremises" type="CollisionShape" parent="Store"]
 transform = Transform( 100, 0, 0, 0, 1, 0, 0, 0, 100, 18.7439, -0.1796, 0 )
@@ -143,13 +146,19 @@ shape = SubResource( 8 )
 transform = Transform( 0.3, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 4.73635, 0.784663, 5.29931 )
 
 [node name="BootsBlack" parent="Store" instance=ExtResource( 17 )]
-transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.2, 4.96174, 2.3733, 5.74759 )
+transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.1, 4.96174, 2.3733, 5.70946 )
+
+[node name="BootsBlack4" parent="Store" instance=ExtResource( 17 )]
+transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.1, 4.63548, 1.42712, -5.78087 )
+
+[node name="BootsBlack5" parent="Store" instance=ExtResource( 17 )]
+transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.1, 5.84805, 1.40786, -5.78087 )
 
 [node name="BootsBlack2" parent="Store" instance=ExtResource( 17 )]
-transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.2, 3.84245, 2.36506, 5.74759 )
+transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.1, 3.84245, 2.36506, 5.74759 )
 
 [node name="BootsBlack3" parent="Store" instance=ExtResource( 17 )]
-transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.2, 7.04354, 1.53889, 5.74759 )
+transform = Transform( 0.198309, 0.0259564, 0, -0.0259564, 0.198309, 0, 0, 0, 0.1, 7.04354, 1.53889, 5.74759 )
 
 [node name="SlidersPink" parent="Store" instance=ExtResource( 18 )]
 transform = Transform( 0.0990345, 0.00970169, -0.00990245, -0.00974961, 0.0995236, 9.26886e-11, 0.00985528, 0.00096545, 0.0995085, 2.64748, 2.39603, 5.7082 )
@@ -162,6 +171,24 @@ transform = Transform( 0.0498271, 0, -0.00415433, 0, 0.05, 0, 0.00415433, 0, 0.0
 
 [node name="SlidersRed2" parent="Store" instance=ExtResource( 19 )]
 transform = Transform( 0.0499505, 0, 0.00222369, 0, 0.05, 0, -0.00222369, 0, 0.0499505, 4.86495, 1.5416, 5.7072 )
+
+[node name="Shoe_Style_2" parent="Store" instance=ExtResource( 20 )]
+transform = Transform( 0.0194818, 0, -0.199049, 0, 0.2, 0, 0.199049, 0, 0.0194818, 2.30685, 2.21877, -5.52187 )
+
+[node name="Shoe_Style_3" parent="Store" instance=ExtResource( 20 )]
+transform = Transform( 0.0194818, 0, -0.199049, 0, 0.2, 0, 0.199049, 0, 0.0194818, 3.44949, 2.21877, -5.63371 )
+
+[node name="Shoe_Style_1" parent="Store" instance=ExtResource( 21 )]
+transform = Transform( 0.000630936, 0, 0.149999, 0, 0.15, 0, -0.149999, 0, 0.000630936, 5.80909, 2.14622, -5.68105 )
+
+[node name="Shoe_Style_4" parent="Store" instance=ExtResource( 21 )]
+transform = Transform( 0.000630936, 0, 0.149999, 0, 0.15, 0, -0.149999, 0, 0.000630936, 7.10067, 2.14622, -5.67561 )
+
+[node name="SlidersBlack" parent="Store" instance=ExtResource( 22 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 7.22339, 1.39956, -5.76061 )
+
+[node name="SlidersBlack2" parent="Store" instance=ExtResource( 22 )]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 4.67411, 2.16196, -5.76061 )
 
 [node name="Lampost" parent="." instance=ExtResource( 11 )]
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 22.2221, 1.25211, 21.0037 )
