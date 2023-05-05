@@ -44,3 +44,6 @@ func _physics_process(delta):
 		hud.setStatus("Backward")
 		translate(-direction * speed)
 
+
+func _on_Area_area_entered(area):
+	get_tree().change_scene("World.tscn")
